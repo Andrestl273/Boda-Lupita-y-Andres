@@ -10,15 +10,19 @@
             background-color: black;
             color: white; /* Set text color to white for visibility on black background */
             margin: 0; /* Remove default margin */
-           /* display: flex;
-            justify-content: center;
+            display: flex;
+            justify-content: top;
             align-items: center;
-            height: 100vh; /*Set body to full viewport height */ */
+            height: 100vh; /*Set body to full viewport height */
         }
 
         /* Style for the container holding the image and button */
         .image-container {
-            position: relative;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 20%;
+            height: auto;
         }
 
         /* Style for the button */
@@ -33,13 +37,6 @@
             padding: 10px 20px;
             cursor: pointer;
         }
-
-        /* Style for the image (adjust as needed) */
-        .image-link img {
-            width: 20%;
-            height: auto;
-            /*object-fit: cover;*/
-        }
     </style>
 </head>
 <body>
@@ -47,9 +44,7 @@
 
     <!-- Container for the image and button -->
     <div class="image-container">
-        <!-- Image (replace the src) -->
         <img src="Despedida Soltero Andres.png" alt="Image Alt Text">
-        <!-- Transparent Button (replace the URL and button text) -->
         <button class="button" onclick="window.open('https://maps.app.goo.gl/YLi1fWdv8sScAY236', '_blank')">ir al mapa</button>
     </div>
 </body>
